@@ -1,0 +1,47 @@
+{
+  "name": "githubbattle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startmongo": "md mongo-db & \"C:/Program Files/MongoDb/Server/3.4/bin/mongod.exe\" --dbpath=/data --port 27017",
+    "start": "webpack-dev-server --open",
+    "start2": "concurrently \"npm run startmongo\" \"npm run start\""
+},
+  "author": "",
+  "license": "",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "html-webpack-plugin": "^2.29.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "~1.16.0",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.11.1",
+    "morgan": "~1.7.0",
+    "prop-types": "^15.5.10",
+    "pug": "~2.0.0-beta10",
+    "query-string": "^4.3.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1"
+  }
+}
+
